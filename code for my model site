@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chocolate Corner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Oxygen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+    html {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    @media (max-width: 100.25em) {
+      html {
+        font-size: 78%;
+      } 
+    }
+ @media (max-width: 62.25em) {
+      html {
+        font-size: 63%;
+      }
+   .headi{
+         text-align:center;
+   }
+   p{
+        text-align:center;
+   }
+    }
+@media (max-width: 46.25em) {
+      html {
+        font-size: 55%;
+      }
+  .headi{
+    text-align:center;
+   }
+   text-align:center;
+    }
+    /* 460px / 16px = 28.75em */
+    @media (max-width: 28.75em) {
+      html {
+        font-size: 45%;
+      }   
+    }
+@font-face {
+    src: url(fonts/BillionDreams_PERSONAL.ttf);
+    font-family: 'FLORLRG';
+    font-weight: normal;
+    font-style: normal;
+}
+    ul {
+      list-style: none;
+    }
+    .ak {
+      text-decoration: none;
+      color: black;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #972239;
+      box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+      color: white;
+      z-index: 10;
+    }
+    .nav-list {
+      display: flex;
+      flex-direction: column;
+      font-family: kavoon;
+      margin-right: 0rem;
+    }
+
+    @media (max-width: 28.75em) {
+      .nav {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        height: 3.3%;
+        background:#972239;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        color: white;
+        z-index: 10;
+      }
+
+      .nav-list {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.5rem;
+        font-family: kavoon;
+      }
+ .nav-list .ak {
+      font-size: 0.5rem;
+      }
+      .headi {
+        font-family: 'FLORLRG';
+        font-size: 3rem;
+        text-align:center;
+        
+        position:relative;
+        bottom:170px;
+      }
+    
+      .ha{ position:relative;
+        bottom:170px;
+      }
+    }
+    .nav-list .ak {
+      display: block;
+      font-family: oxygen;
+      color:white;
+      font-size: 1rem;
+      padding: 0.9rem;
+    }
+/*-- Pale pink, coral, gray, lilac and navy: */
+    .nav-list .ak:hover {
+      background-color:#eaab66;
+    }
+    .headi {
+      padding: 0 0 0 0;
+      font-size: 10rem;
+      font-family: 'FLORLRG';
+      color: #73301c;
+       position:relative;
+        bottom:160px;
+        animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {color:#eaab66;
+  }
+    }
+    .head1 {
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      font-family: oxygen;
+      color: #eaab66;
+    }
+   
+
+    .ha {
+      font-family: kavoon;
+      text-align:center;
+      font-size:2rem;
+      color: #000000;
+        position:relative;
+        bottom:160px;
+    }
+    .clo {
+      font-size: 2rem;
+    }
+    .cho{
+      position:relative;
+      top:2px;
+      font-size:3rem;
+      text-align:center;
+      color:#db6885;
+    }
+.def{   
+     position:relative;
+     top:10px;
+     padding:2rem 2rem 2rem 12rem;
+      font-size:1rem;
+font-family: oxygen;
+      color:white;
+}
+    @media(max-width:28.75em){
+        .def{
+          position:relative;
+          padding:2rem;
+      }
+    }
+ 
+    @media (max-width: 28.75em) {
+      .img {
+        display: none;
+      }
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      background-image:url("https://i.ibb.co/FB4qYDQ/aneta-voborilova-4-Cuz3ls1-BCI-unsplash.jpg");
+      background-size:cover;
+    }
+    @media(max-width:28.75em){
+    .hobbies {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 40vh;
+      background-color: #73301c;
+    }
+    }
+    @media(min-width:28.75em){
+    .hobbies {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 50vh;
+      background-color: #73301c;
+    }
+    }
+    .specials{ 
+   justify-content: center;
+      width: 100%;
+      height: 230vh;
+      background-color: #401614;
+    }  
+  @media (max-width: 28.75em){ 
+.row > .column {
+  padding:8px 4px;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+.row > .col {
+  padding:8px 4px 2px 4px;
+}
+.col{
+  width:100%;
+  position:relative;
+  animation:mycol 5s 1;
+}
+@keyframes mycol{
+  from {left: 100%;}
+  to {left: 0px;}
+}
+.two{
+  height:250px;
+}
+.sm{
+  height:500px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 15%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+}
+    #spl{
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      align-items: center;
+      font-family: oxygen;
+      color: #eaab66;
+    }
+   @media (min-width:28.75em){
+    .row{
+      position: absolute;
+      left:10rem;
+    }
+    .row > .column {
+      padding: 8px 8px;
+}
+.column {
+  float: left;
+  width: 25%;
+}
+.col{
+  display:none;
+}
+#one{
+  height:420px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.specials{
+  height:170vh;
+}
+   }
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  justify-content: center;
+  text-align: center;
+  background-color:#000;
+  padding: 3px 16px;
+  color: white;
+  font-size: 3rem;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (min-width:28.75em){
+  .other {
+      width: 100%;
+      height: 440vh;
+      background-color: #db6885;
+    }
+    .choco{
+  width:100px;
+  height:500px;
+}
+}
+@media (max-width:28.75em){
+.other {
+      width: 100%;
+      height: 160vh;
+      background-color: #db6885;
+    }
+}
+    .lu{
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      align-items: center;
+      font-family: oxygen;
+      color:#401614;
+      
+    }
+    .container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px 10px;
+}
+.kids {
+      width: 100%;
+      height: 1330vh;
+      background-color:coral;
+    }
+    .sp{
+      padding: 1rem 0 0 0;
+      font-size: 3rem;
+      text-align:center;
+      align-items: center;
+      font-family: 'FLORLRG';
+      color:#972239;
+    }
+@media(min-width:28.75em){
+.row1{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  position:absolute;
+  left:11rem;
+}
+.kids {
+      width: 100%;
+      height: 360vh;
+      background-color:coral;
+    }
+}
+.row1{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 62.75em) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 28.75em) {
+  .column1{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.contact1{
+  width: 100%;
+      height: 100vh;
+      background-color:#73301c;
+
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:#972239;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color:black;
+  background-color:#999;
+}
+
+/* Style the container/contact section */
+.container1{
+  border-radius: 5px;
+  background-color: #73301c;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column2 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.container1 h2{
+  color:white;
+  font-size:3rem;
+}
+.ct{
+  color:white;
+  font-size:1rem;
+}
+@media(max-width:28.75em){
+  .im{
+  width:100%;
+
+}
+}
+@media(min-width:28.75em){
+.im{
+  height:500px;
+  width:35%;
+position:absolute;
+left:11rem;
+}
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 60vh;
+  padding: 0 2rem;
+  background-color:#db6885;
+}
+
+.contact-section-header > h2 {
+  font-family:oxygen;
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-family:oxygen;
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+.btn {
+  text-decoration: none;
+  color:black;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+  </style>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li class="img">
+        <img style="-webkit-user-select: none;cursor: zoom-in;background-color: hsl(0, 0%, 90%);transition: background-color 300ms;" src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" width="122" height="150">
+      </li>
+      <li>
+        <a class="ak" href="#about">About</a>
+      </li>
+      <li>
+        <a class="ak" href="#choco_history">Chocolate</a>
+      </li>
+      <li>
+        <a class="ak" href="#speciality">Specials</a>
+      </li>
+      <li>
+        <a class="ak"href="#luscious_things">Luscious Things</a>
+      </li>
+      <li>
+        <a class="ak"href="#kid's_special">Kid's Special</a>
+      </li>
+      <li>
+        <a class="ak"href="#contact1">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <section class="about" id="about" >
+    <div class="headi">
+      Chocolates Corner
+    </div>
+   <p class="ha"> <marquee direction="left" width="75%">
+      HappYness is an unexpected piece of chocolate.
+    </marquee> </p>
+  </section>
+  <section id="choco_history" class="hobbies">
+    <div>
+    <div class="head1">About our favourite</div>
+    <p class="cho">
+      chocolate
+    </p>
+      <hr/>
+     <div  class="def"> Chocolate is a food product made from roasted and ground cacao pods, that is available as a liquid, solid or paste, on its own or as a flavoring agent in other foods. Cacao has been consumed in some form since at least the Olmec civilization (19th-11th century BCE),and the majority of Mesoamerican people - including the Maya and Aztecs - made chocolate beverages.The seeds of the cacao tree have an intense bitter taste and must be fermented to develop the flavor. After fermentation, the beans are dried, cleaned, and roasted.The shell is removed to produce cocoa nibs, which are then ground to cocoa mass, unadulterated chocolate in rough form. Once the cocoa mass is liquefied by heating, it is called chocolate liquor. The liquor may also be cooled and processed into its two components: cocoa solids and cocoa butter. Baking chocolate, also called bitter chocolate, contains cocoa solids and cocoa butter in varying proportions, without any added sugar. Powdered baking cocoa, which contains more fiber than cocoa butter, can be processed with alkali to produce dutch cocoa. Much of the chocolate consumed today is in the form of sweet chocolate, a combination of cocoa solids, cocoa butter or added vegetable oils, and sugar. Milk chocolate is sweet chocolate that additionally contains milk powder or condensed milk. White chocolate contains cocoa butter, sugar, and milk, but no cocoa solids.</div>
+    </div>
+  </section>
+<section id="speciality" class="specials">
+<h2 id="spl" style="text-align:center">Our Special is Cup Cakes</h2>
+<br/>
+<div class="row">
+  <div class="column" >
+    <img src="https://i.ibb.co/Db3j5nc/dessy-dimcheva-zy-MJw-FBg8u8-unsplash.jpg" alt="dessy-dimcheva-zy-MJw-FBg8u8-unsplash" border="0" width="325" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="https://i.ibb.co/s1bwbXR/jr-r-90-Hd-Ol-Gbjck-unsplash.jpg" alt="jr-r-90-Hd-Ol-Gbjck-unsplash" border="0" style="width:100%" width="325" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column" id="three">
+    <img src="https://i.ibb.co/YpXkKpS/luisana-zerpa-MJPr6n-Odppw-unsplash.jpg" alt="luisana-zerpa-MJPr6n-Odppw-unsplash" border="0" width="325" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column" >
+    <img src="https://i.ibb.co/TK7nyFq/meritt-thomas-Ao09kk2ov-B0-unsplash-1.jpg" alt="meritt-thomas-Ao09kk2ov-B0-unsplash-1" border="0" width="325" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img id="one" class="two" src="https://i.ibb.co/8cPdNdc/50b846068b6291a136613280e3a4cd40.jpg"  border="0" width="325" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" alt="Rose Petal Cupcake">
+    </div>
+    <div class="column" >
+      <img id="one" class="two" src="https://i.ibb.co/3Y4DD5Q/b690edb2616d6b7f356dba8b8f0fb28b.jpg" border="0" width="325" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" alt="Honey Dumped Cupcake" >
+    </div>
+    <div class="col" >
+      <img id="one" class="sm" src="https://i.ibb.co/F5zsZQ4/bc6049100b0378033be4cf45aa5628b5.jpg" border="0" width="325" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" alt="Honey Dumped Cupcake" >
+    </div>
+   
+    <div class="column" >
+    <img id="one" class="two" src="https://i.ibb.co/5hYLbc6/c814395a616803ecaefadb6e0cfa6f0c.jpg"  border="0" width="325" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" alt="Liche Flavored Cupcake">
+    </div>
+    <div class="column" >
+      <img  id="one" class="two" src="https://i.ibb.co/WphzFwR/sweet-3127015-960-720.jpg" border="0" width="325" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" alt="Saffron indulged Cupcake">
+    </div>
+    <div>
+<h1 style="text-align: center; color:#db6885;">To know more about Cupcake Recipes, <a href="https://www.cupcakeproject.com/ " target=”_blank”>
+Click Me</a></h1></div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 8</div>
+      <img src="https://i.ibb.co/Db3j5nc/dessy-dimcheva-zy-MJw-FBg8u8-unsplash.jpg" alt="dessy-dimcheva-zy-MJw-FBg8u8-unsplash" border="0" width="325" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 8</div>
+      <img src="https://i.ibb.co/s1bwbXR/jr-r-90-Hd-Ol-Gbjck-unsplash.jpg" alt="jr-r-90-Hd-Ol-Gbjck-unsplash" border="0" width="325" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 8</div>
+      <img src="https://i.ibb.co/YpXkKpS/luisana-zerpa-MJPr6n-Odppw-unsplash.jpg" alt="luisana-zerpa-MJPr6n-Odppw-unsplash" border="0" width="325" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 8</div>
+      <img src="https://i.ibb.co/TK7nyFq/meritt-thomas-Ao09kk2ov-B0-unsplash-1.jpg" border="0" width="325" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 8</div>
+      <img src="https://i.ibb.co/8cPdNdc/50b846068b6291a136613280e3a4cd40.jpg"  border="0" width="325" alt="Chocolate Crunched Cupcake" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="https://i.ibb.co/3Y4DD5Q/b690edb2616d6b7f356dba8b8f0fb28b.jpg" border="0" width="325" style="width:100%"  alt="Honey Dumped Cupcake">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 8</div>
+      <img src="https://i.ibb.co/F5zsZQ4/bc6049100b0378033be4cf45aa5628b5.jpg" border="0" width="325" style="width:100%"  alt="Honey Dumped Cupcake">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">7 / 8</div>
+      <img src="https://i.ibb.co/5hYLbc6/c814395a616803ecaefadb6e0cfa6f0c.jpg"  border="0" width="325" style="width:100%"  alt="Liche Flavored Cupcake">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 8</div>
+      <img src="https://i.ibb.co/WphzFwR/sweet-3127015-960-720.jpg" border="0" width="325" style="width:100%"  alt="Saffron indulged Cupcake">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/Db3j5nc/dessy-dimcheva-zy-MJw-FBg8u8-unsplash.jpg" border="0" style="width:100%" onclick="currentSlide(1)" width="325"  alt="Cherry Chocolate Cake">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/s1bwbXR/jr-r-90-Hd-Ol-Gbjck-unsplash.jpg" border="0"  style="width:100%" onclick="currentSlide(2)" width="325" alt="Cocoa Chocolate Cupcake">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/YpXkKpS/luisana-zerpa-MJPr6n-Odppw-unsplash.jpg" border="0"  style="width:100%" width="325" onclick="currentSlide(3)" alt="Red Velvet Cupcake">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="https://i.ibb.co/TK7nyFq/meritt-thomas-Ao09kk2ov-B0-unsplash-1.jpg" border="0"  style="width:100%" width="325" onclick="currentSlide(4)" alt="Vanilla Cream Cupcake">
+    </div>
+    <div class="column">
+      <img id="one" class="demo cursor two" src="https://i.ibb.co/8cPdNdc/50b846068b6291a136613280e3a4cd40.jpg" border="0" style="width:100%" width="325" onclick="currentSlide(5)" alt="Rose Petal Cupcake">
+    </div>
+    <div class="column" >
+      <img id="one" class="demo cursor two" src="https://i.ibb.co/3Y4DD5Q/b690edb2616d6b7f356dba8b8f0fb28b.jpg" border="0" width="325" style="width:100%" onclick="currentSlide(6)" alt="Honey Dumped Cupcake">
+    </div>
+    <div class="col" >
+      <img id="one" class="demo cursor sm" src="https://i.ibb.co/F5zsZQ4/bc6049100b0378033be4cf45aa5628b5.jpg" border="0" width="325" style="width:100%" onclick="currentSlide(7)" alt="Oreo Cupcake">
+      </div>
+    <div class="column" >
+      <img id="one" class="demo cursor two" src="https://i.ibb.co/5hYLbc6/c814395a616803ecaefadb6e0cfa6f0c.jpg"  border="0" width="325" style="width:100%" onclick="currentSlide(8)" alt="Liche Flavored Cupcake">
+    </div>
+    <div class="column" >
+      <img id="one" class="demo cursor two" src="https://i.ibb.co/WphzFwR/sweet-3127015-960-720.jpg" border="0" width="325" style="width:100%" onclick="currentSlide(9)" alt="Saffron indulged Cupcake">
+    </div>
+  </div>
+</div>
+</section>
+<section id="luscious_things" class="other">
+<h1 class="lu" style="text-align:center">Other Lusious Things</h1>
+<div class="container">
+  <img class="choco" src="https://i.ibb.co/9TZpRjx/kobby-mendez-q54-Oxq44-MZs-unsplash.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Chocolate sprinkled donut</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+</div>
+<div class="container">
+  <img class="choco" src="https://i.ibb.co/rpHrdhJ/aliet-kitchen-JBIK4-QZOFfc-unsplash.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Chocolate Cake</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img class="choco" src="https://i.ibb.co/VptFJxN/aliona-gumeniuk-GAau-SStia3s-unsplash.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Sprinkled chocolate cake</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img class="choco" src="https://i.ibb.co/Jm5m6Lj/max-griss-y-H8-FD6-tp-CU-unsplash.jpg" alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Vanilla with Mango indulged dessert</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+  </div>
+  <div class="container">
+  <img class="choco" src="https://i.ibb.co/kSQG2wP/emile-mbunzama-c-Lpd-EA23-Z44-unsplash.jpg"  alt="Notebook" style="width:100%;">
+  <div class="content">
+    <h1>Oreo Chocolate icecream</h1>
+    <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+  </div>
+  </div>
+</section>
+<section id="kid's_special" class="kids">
+<p class="sp">Kid's Specials</p>
+<!-- Photo Grid -->
+<div class="row1"> 
+  <div class="column1">
+    <img src="https://i.ibb.co/TP0tCSF/cb8dd0f2c4965476b6000e342a1b94cd.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/Df34RkK/c303c93515c29c9a0a098bc56292d153.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/tP3VZhd/b0d582dffd841571b13648a4afa3afa8.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/SyLcHmF/IMG-20220219-214027.jpg" style="width:100%">
+    <img src="https://i.ibb.co/80tm3Tc/IMG-20220220-122918.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/pRCvYqL/IMG-20220219-215304.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/W51Dp9X/IMG-20220219-214909.jpg"  style="width:100%">
+  </div>
+  <div class="column1">
+    <img src="https://i.ibb.co/3FcXzcX/18e804b6341411f4c736a5aeda07e115.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/vQVRLLw/IMG-20220219-215640.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/85hnDpN/IMG-20220220-122752.jpg" style="width:100%">
+    <img src="https://i.ibb.co/p4rCFh7/IMG-20220219-214745.jpg" style="width:100%">
+    <img src="https://i.ibb.co/m5X2PCb/IMG-20220220-122730.jpg" style="width:100%">
+    <img src="https://i.ibb.co/7WyZ8mh/IMG-20220220-122803.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/PgDjL5v/3ba55b539dfdae41cc6e360fd7728b0f.jpg"  style="width:100%">
+  </div>  
+  <div class="column1">
+    <img src="https://i.ibb.co/882Hmc1/IMG-20220220-122832.jpg" style="width:100%">
+    <img src="https://i.ibb.co/9ZBGDrw/IMG-20220219-214449.jpg" style="width:100%">
+    <img src="https://i.ibb.co/NsLyzpP/IMG-20220220-122716.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/9GMFYkZ/IMG-20220220-122703.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/w0pw1Rh/IMG-20220219-215328.jpg" style="width:100%">
+    <img src="https://i.ibb.co/LnYr0xY/IMG-20220219-214437.jpg"  style="width:100%">
+   
+  </div>
+  <div class="column1">
+    <img src="https://i.ibb.co/C6PZmsF/IMG-20220219-215545.jpg" style="width:100%">
+    <img src="https://i.ibb.co/X7vBNp8/IMG-20220219-214724-1.jpg" style="width:100%">
+    <img src="https://i.ibb.co/LZPcdn6/IMG-20220219-215342.jpg" style="width:100%">
+    <img src="https://i.ibb.co/kg5VgF5/IMG-20220219-213747-1.jpg" style="width:100%">
+    <img src="https://i.ibb.co/xmtB5gs/IMG-20220219-214803-2.jpg"  style="width:100%">
+    <img src="https://i.ibb.co/L8TtPhn/IMG-20220220-122740.jpg" style="width:100%">
+  </div>
+</div>
+
+</section>
+<section id="contact1" class="contact1">
+  <div class="container1">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p class="ct">Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row2">
+    <div class="column2">
+      <img class="im" src="https://i.ibb.co/3FGFdJH/1dce0801212efe29cd58870ca27953bf.jpg" >
+    </div>
+    <div class="column2">
+      <form action="/action_page.php">
+        <label class="ct" for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label class="ct" for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label class="ct" for="country">Country</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="Paris">Paris</option>
+          <option value="usa">USA</option>
+          <option value="europe">Europe</option>
+          <option value="australia">Australia</option>
+        </select>
+        <label class="ct" for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  
+  </div>
+</div>
+</section>
+<section id="contact" class="contact-section">
+  <div class="contact-section-header">
+    <h2>Let's Celebrate with sweets</h2>
+    <p>Created by Sangamithra B</p>
+  </div>
+  <div class="contact-links">
+    <a
+      href="https://www.linkedin.com/in/sangamithra-b-68b0801b8"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-linkedin-square"></i> LinkedIn</a
+    >
+    <a
+      href="https://instagram.com/_mithra_b"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-instagram"></i> Instagram</a
+    >
+    <a
+      id="profile-link"
+      href="https://github.com/ss0506"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-github"></i> GitHub</a
+    >
+    <a
+      href="https://twitter.com/sangamithra05"
+      target="_blank"
+      class="btn contact-details"
+      ><i class="fab fa-twitter"></i> Twitter</a
+    >
+    <a href="mailto:sangamithra1947@gmail.com" class="btn contact-details"
+      ><i class="fas fa-at"></i> Send a mail</a
+    >
+    <a href="tel:9751953104" class="btn contact-details"
+      ><i class="fas fa-mobile-alt"></i> Call me</a
+    >
+  </div>
+</section>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+    $(window).scroll(function() {
+        $('.col').each(function(){
+        var pos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+            if (pos < topOfWindow+400){
+                $(this).addClass("mycol");
+            }
+        });
+    });
+</script>
+    
+</body>
+</html
